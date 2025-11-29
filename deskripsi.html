@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deskripsi — Hobi Desain Grafis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Achmad Wijaya Pratama</h1>
+      <nav>
+        <a class="nav-btn" href="index.html">Kembali ke Profil</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-card">
+    <article class="card">
+      <h2>Tentang Hobi: Desain Grafis</h2>
+
+      <p class="lead">
+        Desain grafis adalah hobiku dan medium utama aku berekspresi. Aku menikmati proses merancang visual yang komunikatif — mulai dari konsep, pemilihan tipografi, komposisi, sampai pewarnaan. Bekerja dengan software desain (contoh: Adobe Photoshop, Illustrator, atau alternatif gratis seperti Inkscape dan GIMP) membuat aku bisa menerjemahkan ide abstrak menjadi karya visual yang jelas dan menarik.
+      </p>
+
+      <h3>Apa yang aku suka dari desain grafis</h3>
+      <ul>
+        <li><strong>Problem solving visual:</strong> Mengubah pesan menjadi bentuk yang mudah dimengerti.</li>
+        <li><strong>Eksperimen tipografi & warna:</strong> Bermain layout dan palet warna untuk membangun suasana.</li>
+        <li><strong>Proyek kecil sampai besar:</strong> Mulai dari poster, logo, hingga mockup UI.</li>
+        <li><strong>Belajar berkelanjutan:</strong> Tren desain berubah — aku senang terus belajar teknik dan tools baru.</li>
+      </ul>
+
+<h3>Kumpulan Desain (Poster)</h3>
+<p>
+  Berikut adalah 12 poster yang aku buat sendiri. Semua merupakan hasil belajar desain grafis:
+  tipografi, komposisi layout, dan pemilihan warna. Slider ini akan bergerak otomatis.
+</p>
+
+<div class="slider-container">
+  <div class="slider-track">
+
+    <!-- 12 FOTO DESAIN KAMU -->
+    <div class="slider-item"><img src="poster1.png" alt="Poster 1"></div>
+    <div class="slider-item"><img src="poster2.png" alt="Poster 2"></div>
+    <div class="slider-item"><img src="poster3.png" alt="Poster 3"></div>
+    <div class="slider-item"><img src="poster4.png" alt="Poster 4"></div>
+    <div class="slider-item"><img src="poster5.png" alt="Poster 5"></div>
+    <div class="slider-item"><img src="poster6.png" alt="Poster 6"></div>
+    <div class="slider-item"><img src="poster7.png" alt="Poster 7"></div>
+    <div class="slider-item"><img src="poster8.png" alt="Poster 8"></div>
+    <div class="slider-item"><img src="poster9.png" alt="Poster 9"></div>
+    <div class="slider-item"><img src="poster10.png" alt="Poster 10"></div>
+    <div class="slider-item"><img src="poster11.png" alt="Poster 11"></div>
+    <div class="slider-item"><img src="poster12.png" alt="Poster 12"></div>
+
+    <!-- Gandakan lagi untuk looping smooth -->
+    <div class="slider-item"><img src="poster1.png" alt=""></div>
+    <div class="slider-item"><img src="poster2.png" alt=""></div>
+    <div class="slider-item"><img src="poster3.png" alt=""></div>
+    <div class="slider-item"><img src="poster4.png" alt=""></div>
+    <div class="slider-item"><img src="poster5.png" alt=""></div>
+    <div class="slider-item"><img src="poster6.png" alt=""></div>
+    <div class="slider-item"><img src="poster7.png" alt=""></div>
+    <div class="slider-item"><img src="poster8.png" alt=""></div>
+    <div class="slider-item"><img src="poster9.png" alt=""></div>
+    <div class="slider-item"><img src="poster10.png" alt=""></div>
+    <div class="slider-item"><img src="poster11.png" alt=""></div>
+    <div class="slider-item"><img src="poster12.png" alt=""></div>
+
+  </div>
+</div>
+      
+      <style>
+      /* === SLIDER POSTER === */
+.slider-container{
+  width:100%;
+  overflow:hidden;
+  border-radius:12px;
+  margin-top:16px;
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+.slider-track{
+  display:flex;
+  width: calc(300px * 12 * 2); /* 12 gambar, digandakan agar looping */
+  animation: slide 28s linear infinite;
+}
+
+.slider-item{
+  min-width:300px;
+  margin-right:12px;
+  border-radius:10px;
+  overflow:hidden;
+  background:#000;
+}
+
+.slider-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* ANIMASI BERGERAK KE KANAN → KIRI */
+@keyframes slide{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(calc(-300px * 12)); }
+}</style>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profil — Achmad Wijaya Pratama</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Achmad Wijaya Pratama</h1>
+      <nav>
+        <a class="nav-btn" href="deskripsi.html">Deskripsi Hobi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="card profile-card">
+      <!-- Ganti foto.jpg dengan file foto kamu -->
+      <div class="photo-wrap">
+        <img src="20250517161712398.jpg" alt="Foto Achmad Wijaya Pratama" class="photo" />
+      </div>
+
+      <div class="profile-info">
+        <h2>Achmad Wijaya Pratama</h2>
+        <ul class="info-list">
+          <li><strong>No:</strong> 02</li>
+          <li><strong>Kelas:</strong> 11-7</li>
+          <li><strong>Hobi:</strong> Desain Grafis</li>
+        </ul>
+
+        <p class="lead">
+          Halo — ini halaman singkat tentang aku. Klik tombol di bawah untuk membaca deskripsi lengkap tentang hobiku.
+        </p>
+
+        <div class="actions">
+          <a class="primary" href="deskripsi.html">Baca Deskripsi</a>
+          <a class="ghost" href="#contact">Kontak</a>
+        </div>
+      </div>
+    </section>
+
+    <aside class="card about-card" id="contact">
+      <h3>Kontak singkat</h3>
+      <p>masih belum ada</p>
+      <p class="muted">(jika ada nanti di tambahkan.)</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Achmad Wijaya Pratama — Portfolio sederhana.</small>
+    </div>
+  </footer>
+
+  <script>
+    // otomatis update tahun
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
